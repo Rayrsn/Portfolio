@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+@theme{
+  --color-white:#d9ecff;
+  --color-blue:#2d2d38;
+}
+
+@layer{
+  
+}
