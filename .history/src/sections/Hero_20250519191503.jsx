@@ -1,7 +1,6 @@
 import React from 'react'
 import { words } from '../constants'
 import Button from '../components/Button'
-import HeroExperience from '../components/HeroModels/HeroExperience'
 
 const Hero = () => {
   return (
@@ -34,7 +33,7 @@ const Hero = () => {
                   </span> )}
                 </span>
               </span>
-
+              
               </h1>
             <h1>Into Real Projects</h1>
             <h1>That Deliver Results</h1>
@@ -52,11 +51,9 @@ const Hero = () => {
             </header>
 
             {/*RIGHT : 3D MODEL */} 
-            <figure>
-              <div className='hero-3d-layout'>
-                <HeroExperience />
-              </div>
-            </figure>
+
+            
+
         </div>
      </section>
   )

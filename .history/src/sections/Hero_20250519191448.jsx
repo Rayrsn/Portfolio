@@ -1,7 +1,6 @@
 import React from 'react'
 import { words } from '../constants'
 import Button from '../components/Button'
-import HeroExperience from '../components/HeroModels/HeroExperience'
 
 const Hero = () => {
   return (
@@ -20,9 +19,8 @@ const Hero = () => {
         <div className='flex flex-col gap-7'>
           <div className='hero-text'>
             <h1>Shapping
-
+               
               {/* MAKE THE ICON AND TEXT FOR DESIGN & CONCEPT & DESIGN & CODE   */}
-
               <span className='slide'>
                 <span className='wrapper'>
                   {words.map((word)=>
@@ -34,7 +32,6 @@ const Hero = () => {
                   </span> )}
                 </span>
               </span>
-
               </h1>
             <h1>Into Real Projects</h1>
             <h1>That Deliver Results</h1>
@@ -52,11 +49,9 @@ const Hero = () => {
             </header>
 
             {/*RIGHT : 3D MODEL */} 
-            <figure>
-              <div className='hero-3d-layout'>
-                <HeroExperience />
-              </div>
-            </figure>
+
+            
+
         </div>
      </section>
   )

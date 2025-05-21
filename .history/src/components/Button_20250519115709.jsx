@@ -2,13 +2,13 @@ import React from 'react'
 
 const Button = ({text, className, id}) => {
   return (
-    <a className={`${className ?? ''} cta-wrapper`}>
+    <a className={`${className ?? ''} cta-wapper`} >
         <div className='cta-button group'>
             <div className='bg-circle' />
             <p className='text'> {text} </p>
         </div>
-        <div className='arrow-wrapper'>
-            <img src="/image/arrow.svg" alt="arrow-down" />
+        <div className='arrow-warpper'>
+            <img src="/image/code.svg" alt="arrow-down" />
         </div>
     </a>
   )
