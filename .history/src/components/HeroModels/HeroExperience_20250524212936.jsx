@@ -23,10 +23,7 @@ const HeroExperience = () => {
         maxPolarAngle={Math.PI / 2}
       </OrbitControls>
 
-      {/* SET THE  LIGHTS FOR*/}
       <HeroLights/> 
-
-      
       {/* SET UP 3D MODEL FOR DIFFERENT DEVICES */}
       <group
       scale={isMobile? 0.7 : 1}

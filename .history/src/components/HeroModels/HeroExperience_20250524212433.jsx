@@ -3,7 +3,6 @@ import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { Room } from './Room'
-import HeroLights from './HeroLights'
 
 const HeroExperience = () => {
 
@@ -12,7 +11,9 @@ const HeroExperience = () => {
 
   return (
     <Canvas camera={{position:[0,0,15] , fov: 45}}>
-  
+      <ambientLight intensity={0.2} color="#1a1a40"/>
+      <directionalLight position={[5,5,5]} intensity={2}/>
+
       {/* SETUP THE 3D MODEL */}
       <OrbitControls>
         enablePan={false} 
@@ -23,14 +24,10 @@ const HeroExperience = () => {
         maxPolarAngle={Math.PI / 2}
       </OrbitControls>
 
-      {/* SET THE  LIGHTS FOR*/}
-      <HeroLights/> 
-
-      
       {/* SET UP 3D MODEL FOR DIFFERENT DEVICES */}
       <group
       scale={isMobile? 0.7 : 1}
-      position={[0 , -3.5 , 0]}
+      position={[0 , -4.5 , 0]}
       rotation={[0, Math.PI/4 , 0]}>
         <Room/>
         2
