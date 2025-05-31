@@ -16,15 +16,14 @@ const Hero = () => {
       },
       // TO
     {
-      y:0,
-      opacity:1, 
+      y:0, 
       stagger: 0.2,
       duration: 1,
       ease:"power2.inOut"
     }
   )
 
-  })
+  });
   return (
      <section id="hero " className='relative overflow-hidden'>
       {/* BACKGROUND IMAGE FOR RIGHT SIDE OF HERO  */}

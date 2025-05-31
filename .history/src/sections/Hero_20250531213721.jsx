@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { words } from '../constants'
 import Button from '../components/Button'
 import HeroExperience from '../components/HeroModels/HeroExperience'
@@ -7,8 +7,8 @@ import gsap from 'gsap'
 
 
 const Hero = () => {
-  useGSAP(()=>{
-    gsap.fromTo('.hero-text h1',
+  useEffect(()=>{
+    gsap.fromTo(".hero-text h1",
       // FROM
       {
         y:50,
@@ -16,15 +16,14 @@ const Hero = () => {
       },
       // TO
     {
-      y:0,
-      opacity:1, 
+      y:0, 
       stagger: 0.2,
       duration: 1,
       ease:"power2.inOut"
     }
   )
 
-  })
+  }, []);
   return (
      <section id="hero " className='relative overflow-hidden'>
       {/* BACKGROUND IMAGE FOR RIGHT SIDE OF HERO  */}
