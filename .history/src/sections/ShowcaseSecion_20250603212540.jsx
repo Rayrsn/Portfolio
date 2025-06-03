@@ -10,10 +10,9 @@ const ShowcaseSecion = () => {
     const project2Ref = useRef(null);
     const project3Ref = useRef(null);
 
-    gsap.registerPlugin(ScrollTrigger);
-useGSAP(()=> {
     const projects=[project1Ref.current, project2Ref.current , project3Ref.current];
-    projects.forEach ((card, index)=>{
+
+    cards.forEach ((card, index)=>{
         gsap.fromTo(card,
             {
                 y:50 , opacity: 0
@@ -31,6 +30,9 @@ useGSAP(()=> {
     )
     })
 
+
+    gsap.registerPlugin(ScrollTrigger);
+useGSAP(()=> {
     gsap.fromTo(
         sectionRef.current,
         {opacity:0},
