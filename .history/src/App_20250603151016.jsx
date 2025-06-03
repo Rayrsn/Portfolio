@@ -4,8 +4,8 @@ import ShowcaseSecion from "./sections/ShowcaseSecion"
 const App = () => {
   return (
     <>
-    <Hero />
-    <ShowcaseSecion />
+    <Hero/>
+    <ShowcaseSecion/>
     </>
   )
 }
