@@ -13,7 +13,7 @@ export const words=[
   ];
 
 
-export const counterItems=[
+  const counterItems=[
     {value:15 , suffix: "+", label: "Year of Experience"},
     {value:30 , suffix: "+", label: "Satisfied Clients"},
     {value:20 , suffix: "+", label: "Projects Completed"},
