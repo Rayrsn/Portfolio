@@ -1,14 +1,5 @@
 import React from 'react'
 import { logoIconsList } from '../constants/index.js'
-
-const LogoIcon= ({icon})=>{
-    return(
-        <div className='flex-none flex-center marquee-item'>
-            <img src={icon.imgPath} alt={icon.name} />
-        </div>
-    )
-}
-
 const LogoSection = () => {
   return (
     <div className='md:my-20 my-10 relative'>
@@ -17,14 +8,7 @@ const LogoSection = () => {
         
         <div className='marquee h-52'>
         <div className='marquee-box md:gap-12 gap-5 '>
-           {logoIconsList.map((icon , index)=>(
-            <LogoIcon key={icon.index} icon={icon} />
-           ))}
-
-            {logoIconsList.map((icon , index)=>(
-            <LogoIcon key={icon.index} icon={icon} />
-           ))}
-
+           {logoIconsList}
         </div>
         </div> 
     </div>

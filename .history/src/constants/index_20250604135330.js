@@ -1,6 +1,6 @@
 import { label } from "three/tsl";
 
-  export const navLinks = [
+  const navLinks = [
   {
     name: "Work",
     link: "#work",
@@ -22,7 +22,7 @@ import { label } from "three/tsl";
 
 
 
- export const words=[
+ const words=[
     {text: 'Ideas', imgPath: '/image/ideas.svg'},
     {text: 'Concepts', imgPath: '/image/concepts.svg'},
     {text: 'Design', imgPath: '/image/design.svg'},
@@ -35,7 +35,7 @@ import { label } from "three/tsl";
   ];
 
 
- export const counterItems=[
+ const counterItems=[
     {value:15 , suffix: "+", label: "Year of Experience"},
     {value:30 , suffix: "+", label: "Satisfied Clients"},
     {value:20 , suffix: "+", label: "Projects Completed"},
@@ -43,38 +43,46 @@ import { label } from "three/tsl";
   ];
 
 
-  export const logoIconsList = [
+  const logoIconsList = [
     {
-      imgPath: "/image/logos/company-logo-1.png",
+      imgPath: "/images/logos/company-logo-1.png",
     },
     {
-      imgPath: "/image/logos/company-logo-2.png",
+      imgPath: "/images/logos/company-logo-2.png",
     },
     {
-      imgPath: "/image/logos/company-logo-3.png",
+      imgPath: "/images/logos/company-logo-3.png",
     },
     {
-      imgPath: "/image/logos/company-logo-4.png",
+      imgPath: "/images/logos/company-logo-4.png",
     },
     {
-      imgPath: "/image/logos/company-logo-5.png",
+      imgPath: "/images/logos/company-logo-5.png",
     },
     {
-      imgPath: "/image/logos/company-logo-6.png",
+      imgPath: "/images/logos/company-logo-6.png",
     },
     {
-      imgPath: "/image/logos/company-logo-7.png",
+      imgPath: "/images/logos/company-logo-7.png",
     },
     {
-      imgPath: "/image/logos/company-logo-8.png",
+      imgPath: "/images/logos/company-logo-8.png",
     },
     {
-      imgPath: "/image/logos/company-logo-9.png",
+      imgPath: "/images/logos/company-logo-9.png",
     },
     {
-      imgPath: "/image/logos/company-logo-10.png",
+      imgPath: "/images/logos/company-logo-10.png",
     },
     {
-      imgPath: "/image/logos/company-logo-11.png",
+      imgPath: "/images/logos/company-logo-11.png",
     },
   ];
+
+
+  export{
+    navLinks,
+    words,
+    counterItems,
+    logoIconsList,
+  }
