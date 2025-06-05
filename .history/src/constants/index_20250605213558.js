@@ -111,7 +111,9 @@
     },
     {
       review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-      imgPath: "/image/exp2.png",
+      imgPath: "/image/<div>
+                          <img src={card.imgPath}  alt={card.title} />
+                        </div>exp2.png",
       logoPath: "/image/logo2.png",
       title: "Full Stack Developer",
       date: "June 2020 - December 2023",

@@ -3,21 +3,22 @@ import React, { useRef } from 'react'
 const GlowCard = ({card , children , index}) => {
     // MAKE THE GLOW FOR WHEN MOUSE IS MOVING 
     const cardRefs= useRef([]);
-    const handleMouseMove=(index) => (e) => {
+    const handleMouseMove=(index)=>(e)=>{
         const card= cardRefs.current[index];
         if(!card) return; 
 
         // GET THE MOUSE POSITION RELATIVE TO CARD
-        const rect = card.getBoundingClientRect(); 
+        const rect= card.getBoundingClientReact();
         const mouseX = e.clientX - rect.left - rect.width /2; 
         const mouseY = e.clientY- rect.top - rect.height /2;
         
         // CALCULATE THE ANGLE FROM THE CENTER OF THE CARD
-        let angle = Math.atan2(mouseY , mouseX)* (180/ Math.PI);
+        let andgle = Math.atan2(mouseY , mouseX)* (180/ Math.PI);
 
-        angle=(angle +360 )% 360 // CONVERT TO 0-360 RANGE
+        andgle=(andgle+360)%360; // CONVERT TO 0-360 RANGE
 
-        card.style.setProperty('--start',angle+60)
+        card.style.setProperty('--start',andgle+60 );
+
     }
 
   return (

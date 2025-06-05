@@ -8,14 +8,14 @@ const GlowCard = ({card , children , index}) => {
         if(!card) return; 
 
         // GET THE MOUSE POSITION RELATIVE TO CARD
-        const rect = card.getBoundingClientRect(); 
+        const rect= card.getBoundingClientReact();
         const mouseX = e.clientX - rect.left - rect.width /2; 
         const mouseY = e.clientY- rect.top - rect.height /2;
         
         // CALCULATE THE ANGLE FROM THE CENTER OF THE CARD
         let angle = Math.atan2(mouseY , mouseX)* (180/ Math.PI);
 
-        angle=(angle +360 )% 360 // CONVERT TO 0-360 RANGE
+        angle=(angle + 360 ) % 360 // CONVERT TO 0-360 RANGE
 
         card.style.setProperty('--start',angle+60)
     }
