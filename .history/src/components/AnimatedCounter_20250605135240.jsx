@@ -11,7 +11,7 @@ const AnimatedCounter = () => {
             <div className='bg-zinc-900 rounded-lg p-10 flex flex-col jsustify-center '>
             <div key={counterItems.label} className='counter-number text-white text-5xl font-bold mb-2'>
             
-              <CountUp suffix={item.suffix} end={item.value} duration={8}/>
+              <CountUp suffix={item.suffix} end={item.value} duration={3}/>
             </div>
             <div className='text-white-50 text-lg'>
               {item.label}

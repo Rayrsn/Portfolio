@@ -1,3 +1,4 @@
+import { label } from "three/tsl";
 
    const navLinks = [
   {
