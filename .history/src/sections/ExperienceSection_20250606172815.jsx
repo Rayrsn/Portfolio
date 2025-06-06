@@ -27,7 +27,7 @@ const ExperienceSection = () => {
                       {/* TIMELINE */}
                       <div className="flex items-start">
                         <div className="timeline-wrapper">
-                          <div className="timeline" />
+                          {/* <div className="timeline" /> */}
                           <div className='gradient-line w-1 h-full'/>
                         </div>
 
