@@ -239,11 +239,21 @@ section {
   }
 
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center;
+    position: relative;
+    width: 100%;
+    height: auto;
   }
-
+  
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    width: 100%;
+    height: 2px;
+    background-color: #830cb5;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .gradient-line {
+    background: linear-gradient(to bottom, #830cb5, transparent);
   }
 
   .timeline-logo {

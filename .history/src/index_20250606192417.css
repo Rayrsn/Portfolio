@@ -243,8 +243,14 @@ section {
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    width: 100%;
+    height: 2px; /* Adjust thickness */
+    background-color: #830cb5; /* Set a visible color */
+    position: relative;
+    z-index: 10; /* Ensure it appears above other elements */
+  } /* Ensure it stays within its parent */
   }
+  
 
   .timeline-logo {
     @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;

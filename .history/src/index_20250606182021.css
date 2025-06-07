@@ -239,19 +239,22 @@ section {
   }
 
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center;
+    /* Remove the absolute positioning */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
-  }
-
+  
   .timeline-logo {
-    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
+    position: relative;
+    z-index: 10;
+    /* Keep existing styles */
   }
-
+  
   .exp-card-wrapper {
-    @apply flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between;
+    /* Change flex direction to be consistent */
+    @apply flex xl:flex-row flex-col xl:gap-8 gap-6 items-start;
   }
 
   .gradient-edge {

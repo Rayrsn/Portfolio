@@ -43,10 +43,7 @@ const ExperienceSection = () => {
   return (
     <section id='experience' className='w-full md:mt-40 mt-20 section-padding xl:px-0'>
         <div className='w-full h-full md:px-20 px-5'>
-            <TitleHeader 
-            title="Professional Work Experience " 
-            sub="🗃️My Career Overview" 
-            />
+            <TitleHeader title="Professional Work Experience " sub="🗃️My Career Overview" />
 
             {/* EXPERIENCE CARDS */}
             <div className='mt-32 relative'>
@@ -65,16 +62,15 @@ const ExperienceSection = () => {
                       <div className="xl:w-4/6">
                       {/* TIMELINE */}
                       <div className="flex items-start">
-                          <div className="timeline-wrapper">
-                            <div className="timeline"/>
-                            <div className="gradient-line w-1 h-full" />
-                          </div>
+                    <div className="timeline-wrapper">
+                    <div className="timeline" />
+                      <div className="gradient-line w-1 h-full" />
+                      </div>
 
-                          {/* FOR EXPERIENCE CARDS */}
-                        <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative1 z-20">
+                        {/* FOR EXPERIENCE CARDS */}
+                        <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                           <div className='timeline-logo '>
                             <img src={card.logoPath} alt="logo" />
-                            </div>
                             <div>
                               <h1 className="font-semibold text-3xl"> {card.title} </h1>
                               <p className="my-5 text-white-50"> 🗓️&nbsp;{card.date} </p>
@@ -90,6 +86,7 @@ const ExperienceSection = () => {
                                 ))}
                               </ul>
                             </div>
+                          </div>
                         </div>
                       </div>
                       </div>
