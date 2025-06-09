@@ -22,11 +22,7 @@ const TechStack = () => {
                         {/* CONTENT OF 3D MODEL BOX */}
                         <div className='tech-card-content'>
                             <div className='tech-icon-wrapper'>
-                                <TechIcon model={icon} /> 
-                            </div>
-                            {/* TEXT OF THE 3D BOX  */}
-                            <div className='padding-x w-full'>
-                                <p>{icon.name}</p>
+                                <TechIcon /> 
                             </div>
                         </div>
                     </div>
