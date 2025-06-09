@@ -1,7 +1,8 @@
 import { Environment, Float, OrbitControls, useGLTF } from '@react-three/drei'
 import React, { useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
-import * as THREE from 'three'
+import { color } from 'three/tsl';
+
 const TechIcon = ({model}) => {
 
     const secne = useGLTF(model.modelPath);
@@ -10,8 +11,7 @@ const TechIcon = ({model}) => {
       if(model.name==='Interactive Developer'){
         secne.scene.traverse((child)=>{
           if(child.isMesh && child.name=== 'Object_5'){
-            child.material= new THREE.MeshStandardMaterial({color: 'white'})
-          }
+            child.material= new THREE.MeshStandardMaterial({color: 'white'}
         })
       }
     },[])
