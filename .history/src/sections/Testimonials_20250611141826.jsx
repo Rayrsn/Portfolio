@@ -12,8 +12,8 @@ const Testimonials = () => {
             title="What People Say About Me"
             sub="💬 Testimonials from my clients and colleagues"
             />
-
-            {/* TESTIMONIALS COMMENTS */}
+        </div>
+        {/* TESTIMONIALS COMMENTS */}
         <div className='lg:columns-3 md:columns-2 columns-1 mt-16'>
             {testimonials.map(({imgPath , name , mentions , review})=>(
             <GlowCard card={{review}} >
@@ -28,8 +28,6 @@ const Testimonials = () => {
             </GlowCard>
             ))}
         </div>
-        </div>
-        
     </section>
   )
 }

@@ -209,7 +209,7 @@
       mentions: "@albertflores",
       review:
         "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-      imgPath: "/image/client6.png",
+      imgPath: "/images/client6.png",
     },
   ];
 

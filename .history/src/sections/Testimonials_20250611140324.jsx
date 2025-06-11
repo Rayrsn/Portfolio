@@ -7,29 +7,29 @@ const Testimonials = () => {
   return (
     <section id='testimonials' className='flex-center section-padding'>
         {/* TITLE HEADER*/}
-        <div className='w-full h-full md::px-10 px-5'>
+        <div className='w-full h-full md:px-10 px-5'>
             <TitleHeader 
             title="What People Say About Me"
-            sub="💬 Testimonials from my clients and colleagues"
+            sub="💬 Client Feedback Highlights"
             />
+        </div>
+        {/* TESTIMONIALS COMMENTS */}
 
-            {/* TESTIMONIALS COMMENTS */}
+
         <div className='lg:columns-3 md:columns-2 columns-1 mt-16'>
-            {testimonials.map(({imgPath , name , mentions , review})=>(
-            <GlowCard card={{review}} >
+            {testimonials.map((testimonial)=>(
+            <GlowCard card={testimonial} >
                 <div className='flex items-center gap-3'>
-                    <img src={imgPath} alt={name} />
+                    <img src={testimonial.imgPath} alt={testimonial.name} />
                 </div>
                 {/* CONETENT OF NAME AND MENTION FOR USERS */}
                 <div>
-                    <p className='font-bold'>{name}</p>
-                    <p className='text-white-50'> {mentions} </p>
+                    <p className='font-bold'>{testimonial.name}</p>
+                    <p className='text-white-50'> {testimonial.mentions} </p>
                 </div>
             </GlowCard>
             ))}
         </div>
-        </div>
-        
     </section>
   )
 }
