@@ -9,11 +9,6 @@ const Contact = () => {
     email: '',
     message: ''
   });
-
-  const handelChange=(e)
-
-
-
   return (
     <section className='flext items-center section-padding'>
         {/* TITLE HEADER */}
@@ -28,7 +23,7 @@ const Contact = () => {
               <div className='xl:col-span-5'>
                 <div className='flex-center card-border rounded-xl p-10'>
                   
-                  <form form={formRef} onSubmit={handelChange} className='w-full flex flex-col gap-7'>
+                  <form onSubmit={handelChange} className='w-full flex flex-col gap-7'>
                 
                 {/* NAME */}
                 <div className='mb-6'>

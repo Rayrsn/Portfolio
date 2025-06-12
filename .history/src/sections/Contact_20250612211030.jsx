@@ -1,19 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import TitleHeader from '../components/TitleHeader'
 
 const Contact = () => {
-  const formRef=useRef(null);
-  const [loading, setloading]=useState(false);
-  const [form, setform]=useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handelChange=(e)
-
-
-
   return (
     <section className='flext items-center section-padding'>
         {/* TITLE HEADER */}
@@ -28,7 +16,7 @@ const Contact = () => {
               <div className='xl:col-span-5'>
                 <div className='flex-center card-border rounded-xl p-10'>
                   
-                  <form form={formRef} onSubmit={handelChange} className='w-full flex flex-col gap-7'>
+                  <form onSubmit={handelChange} className='w-full flex flex-col gap-7'>
                 
                 {/* NAME */}
                 <div className='mb-6'>
@@ -84,12 +72,6 @@ const Contact = () => {
                         </div>
                       </button>
               </form>
-              </div>
-              </div>
-              {/* 3D MODELS COMPEUTER */}
-              <div className='xl:col-span-7 min-h-96' >
-                <div className='bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden'>
-                  {/* 3d model */}
                 </div>
               </div>
             </div>
