@@ -10,9 +10,7 @@ const Contact = () => {
     message: ''
   });
 
-  const handelChange=(e)=>{
-    const {name, value}=e.target;
-    setform({...form,[name]: value})};
+  const handelChange=(e)
 
 
 

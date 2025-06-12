@@ -10,9 +10,7 @@ const Contact = () => {
     message: ''
   });
 
-  const handelChange=(e)=>{
-    const {name, value}=e.target;
-    setform({...form,[name]: value})};
+  const handelChange=(e)
 
 
 
@@ -30,7 +28,7 @@ const Contact = () => {
               <div className='xl:col-span-5'>
                 <div className='flex-center card-border rounded-xl p-10'>
                   
-                  <form form={formRef} onSubmit={handelChange} className='w-full flex flex-col gap-7'>
+                  <form  className='w-full flex flex-col gap-7'>
                 
                 {/* NAME */}
                 <div className='mb-6'>
@@ -39,8 +37,8 @@ const Contact = () => {
                   type="text"
                   id='name'
                   name='name'
-                  value={form.name}
-                  onChange={handelChange}
+                  // value={form.name}
+                  // onChange={handelChange}
                   placeholder='What is Your Name?'
                   required 
                   />
@@ -53,8 +51,8 @@ const Contact = () => {
                   type="text" 
                   name="email" 
                   id="email"
-                  value={form.email}
-                  onChange={handelChange}
+                  // value={form.email}
+                  // onChange={handelChange}
                   placeholder='What is Your Email?'
                   required 
                   />  
@@ -78,7 +76,7 @@ const Contact = () => {
                         <div className='cta-button group'>
                           <div className='bg-cirlce'/>
                           <p className='text'>
-                            {loading ? 'Sending...': 'Send Message'}
+                            {/* {loading ? 'Sending...': 'Send Message'} */}
                           </p>
                           <div className='arrow-wrapper'>
                             <img src="/image/arrow-down.svg" alt="arrow" />
