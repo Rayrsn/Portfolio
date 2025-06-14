@@ -215,19 +215,20 @@
 
   const socialImgs = [
     {
-      name: "github",
-      imgPath: "/image/github.png",
-      url: "https://github.com/mOzariffard"
+      name: "insta",
+      imgPath: "/images/insta.png",
+    },
+    {
+      name: "fb",
+      imgPath: "/images/fb.png",
     },
     {
       name: "x",
-      imgPath: "/image/x.png",
-      url: ""
+      imgPath: "/images/x.png",
     },
     {
       name: "linkedin",
-      imgPath: "/image/linkedin.png",
-      url:"https://www.linkedin.com/in/mzariffard/"
+      imgPath: "/images/linkedin.png",
     },
   ];
 

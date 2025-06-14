@@ -7,13 +7,12 @@ import Hero from "./sections/Hero"
 import ShowcaseSecion from "./sections/ShowcaseSecion"
 import TechStack from "./sections/TechStack"
 import Testimonials from "./sections/Testimonials"
-import Footer from "./sections/Footer"
 
 const App = () => {
   return (
     <>
-    <NavBar />
     <Hero />
+    <NavBar />
     <ShowcaseSecion />
     <LogoSection />
     <FeatureCards />
@@ -21,7 +20,6 @@ const App = () => {
     <TechStack />
     <Testimonials />
     <Contact />
-    <Footer />
     </>
   )
 }

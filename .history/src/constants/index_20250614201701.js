@@ -217,17 +217,14 @@
     {
       name: "github",
       imgPath: "/image/github.png",
-      url: "https://github.com/mOzariffard"
     },
     {
       name: "x",
       imgPath: "/image/x.png",
-      url: ""
     },
     {
       name: "linkedin",
       imgPath: "/image/linkedin.png",
-      url:"https://www.linkedin.com/in/mzariffard/"
     },
   ];
 
