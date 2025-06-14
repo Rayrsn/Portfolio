@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react'
 import TitleHeader from '../components/TitleHeader'
-import ContactExperience from '../components/ContactExperience';
 
 const Contact = () => {
   const formRef=useRef(null);
@@ -36,6 +35,7 @@ const Contact = () => {
                 <div className='flex-center card-border rounded-xl p-10'>
                   
                   <form form={formRef} onSubmit={handelSubmit} className='w-full flex flex-col gap-7'>
+                
                 {/* NAME */}
                 <div className='mb-6'>
                   <label htmlFor="name"> Name </label>
@@ -82,7 +82,7 @@ const Contact = () => {
                         <div className='cta-button group'>
                           <div className='bg-cirlce'/>
                           <p className='text'>
-                            Send Message
+                            {loading ? 'Sending...': 'Send Message'}
                           </p>
                           <div className='arrow-wrapper'>
                             <img src="/image/arrow-down.svg" alt="arrow" />
@@ -96,7 +96,6 @@ const Contact = () => {
               <div className='xl:col-span-7 min-h-96' >
                 <div className='bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden'>
                   {/* 3d model */}
-                  <ContactExperience/> 
                 </div>
               </div>
             </div>
