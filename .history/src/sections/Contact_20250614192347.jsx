@@ -42,7 +42,7 @@ const Contact = () => {
 
 
   return (
-    <section className='flex items-center section-padding'>
+    <section className='flext items-center section-padding'>
         {/* TITLE HEADER */}
         <div className='w-full h-full md:px-10 px-5'>
             <TitleHeader 
@@ -55,7 +55,7 @@ const Contact = () => {
               <div className='xl:col-span-5'>
                 <div className='flex-center card-border rounded-xl p-10'>
                   
-                  <form ref={formRef} onSubmit={handelSubmit} className='w-full flex flex-col gap-7'>
+                  <form form={formRef} onSubmit={handelSubmit} className='w-full flex flex-col gap-7'>
                 {/* NAME */}
                 <div className='mb-6'>
                   <label htmlFor="name"> Name </label>
@@ -74,7 +74,7 @@ const Contact = () => {
                 <div>
                   <label htmlFor="email">Your Email</label>
                   <input 
-                  type="email" 
+                  type="text" 
                   name="email" 
                   id="email"
                   value={form.email}

@@ -18,20 +18,15 @@ const Contact = () => {
     setform({...form,[name]: value})};
 
     const handelSubmit= async (e)=>{
-      e.preventDefault();
+      e.preventDefult();
 
       setLoading(true);
       try{
-        // Send email using EmailJS
         await emailjs.sendForm(
-          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID, 
-          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-          // pass in form data and content of all information
-          formRef.current,
-          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+          import.meta.env.VITTE_APP_EMAILJS_SERVICE_ID, 
+          import.meta.env.VITTE_APP_EMAILJS_TEMPLATE_ID,
+          import.meta.env.VITTE_APP_EMAILJS_PUBLIC_KEY,
         )
-        // RESET THE FORM AFTER SUBMITION
-        setform({name: '', email: '', message: ''});
       }catch(error){
         console.error("EmailJs Error", error);
       }finally{
@@ -42,7 +37,7 @@ const Contact = () => {
 
 
   return (
-    <section className='flex items-center section-padding'>
+    <section className='flext items-center section-padding'>
         {/* TITLE HEADER */}
         <div className='w-full h-full md:px-10 px-5'>
             <TitleHeader 
@@ -55,7 +50,7 @@ const Contact = () => {
               <div className='xl:col-span-5'>
                 <div className='flex-center card-border rounded-xl p-10'>
                   
-                  <form ref={formRef} onSubmit={handelSubmit} className='w-full flex flex-col gap-7'>
+                  <form form={formRef} onSubmit={handelSubmit} className='w-full flex flex-col gap-7'>
                 {/* NAME */}
                 <div className='mb-6'>
                   <label htmlFor="name"> Name </label>
@@ -74,7 +69,7 @@ const Contact = () => {
                 <div>
                   <label htmlFor="email">Your Email</label>
                   <input 
-                  type="email" 
+                  type="text" 
                   name="email" 
                   id="email"
                   value={form.email}

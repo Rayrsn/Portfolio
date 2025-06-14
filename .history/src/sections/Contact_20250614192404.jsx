@@ -55,7 +55,7 @@ const Contact = () => {
               <div className='xl:col-span-5'>
                 <div className='flex-center card-border rounded-xl p-10'>
                   
-                  <form ref={formRef} onSubmit={handelSubmit} className='w-full flex flex-col gap-7'>
+                  <form form={formRef} onSubmit={handelSubmit} className='w-full flex flex-col gap-7'>
                 {/* NAME */}
                 <div className='mb-6'>
                   <label htmlFor="name"> Name </label>
@@ -74,7 +74,7 @@ const Contact = () => {
                 <div>
                   <label htmlFor="email">Your Email</label>
                   <input 
-                  type="email" 
+                  type="text" 
                   name="email" 
                   id="email"
                   value={form.email}
